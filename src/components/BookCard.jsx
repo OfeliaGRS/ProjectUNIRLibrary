@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+const FALLBACK_COVER = "https://via.placeholder.com/110x160?text=Sin+Portada";
 
 export default function BookCard({ book }) {
   return (
@@ -6,9 +7,12 @@ export default function BookCard({ book }) {
       <div className="book-card__media">
         <img
           className="book-card__img"
-          src={book.cover}
+          src={book.cover && book.cover.trim() ? book.cover : FALLBACK_COVER}
           alt={`Portada de ${book.title}`}
           loading="lazy"
+          onError={(e) => {
+            e.currentTarget.src = FALLBACK_COVER;
+          }}
         />
       </div>
 

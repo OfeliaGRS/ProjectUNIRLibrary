@@ -2,7 +2,7 @@ function Rentals() {
   return (
     <div>
       <h1>Alquileres</h1>
-      <p>Mis alquileres (mock)</p>
+      <p>Mis alquileres</p>
     </div>
   );
 }

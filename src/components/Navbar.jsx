@@ -6,7 +6,7 @@ export default function Navbar() {
       <nav className="nav__menu">
         <NavLink className="nav__link" to="/">Inicio</NavLink>
         <NavLink className="nav__link" to="/catalog">Catálogo</NavLink>
-        <NavLink className="nav__link" to="/rentals">Alquileres</NavLink>
+        <NavLink className="nav__link" to="/rentals">Mis Alquileres</NavLink>
       </nav>
     </header>
   );
